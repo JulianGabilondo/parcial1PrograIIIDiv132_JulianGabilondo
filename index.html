@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device:width, initial-scale=1.0">
+  <title>Tienda de Frutas</title>
+
+   <!-- Enlazamos la hoja de estilos externa -->
+
+  <link rel="stylesheet" href="css/style.css">
+</h1>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <!-- Título principal -->
+    <h1>Frutería</h1>
+
+     <!-- Aquí se imprime el nombre del alumno desde JS -->
+    <span id="nombreAlumno"></span>
+
+    <!-- Campo para buscar frutas -->
+    <input type="text" id="busqueda" placeholder="Buscar...">
+    
+     <!-- Muestra cantidad de productos en el carrito -->
+    <p>Carrito: <span id="cantidad">0</span> Productos</p>
+  </nav>
+
+  <!-- TÍTULO -->
+  <h2 class="titulo">Nuestras frutas</h2>
+
+  <!-- BOTONES ORDENAR -->
+  <div class="botones-orden">
+    <button id="ordenarNombre">Ordenar por nombre</button>
+    <button id="ordenarPrecio">Ordenar por precio</button>
+  </div>
+
+  <!-- LISTA DE PRODUCTOS -->
+  <div id="productos" class="contenedor-productos"></div>
+
+  <!-- CARRITO -->
+  <section class="seccion-carrito">
+    <h3>Carrito</h3>
+    <ul id="carrito" class="lista-carrito"></ul>
+    <button id="vaciarCarrito" class="boton-vaciar">Vaciar Carrito</button>
+    <p id="total" class="total">Total: $0</p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
