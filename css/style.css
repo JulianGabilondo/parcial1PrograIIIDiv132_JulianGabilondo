@@ -1,0 +1,143 @@
+
+/* === ESTILOS GENERALES === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #43a047;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar input {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+#nombreAlumno {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* === TITULOS === */
+.titulo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* === BOTONES ORDEN === */
+.botones-orden {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botones-orden button {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === PRODUCTOS === */
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-producto {
+  background: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-producto img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.card-producto h3 {
+  margin: 10px 0 5px 0;
+}
+
+.card-producto p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.card-producto button {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-producto button:hover {
+  background-color: #388e3c;
+}
+
+/* === CARRITO === */
+.seccion-carita {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+.bloque-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.boton-eliminar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton-vaciar {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  color: #000;
+}
